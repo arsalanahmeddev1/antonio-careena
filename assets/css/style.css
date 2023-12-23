@@ -284,6 +284,10 @@ img {
   color: var(--theme-color) !important;
   transition: all ease 0.5s;
 }
+.primary-button:hover {
+  background-color: var(--theme-color);
+  color: var(--default-color);
+}
 /* responsive */
 .close-menu i,
 .open-menu i {
