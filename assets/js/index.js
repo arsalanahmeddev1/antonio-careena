@@ -46,3 +46,8 @@ menuToggle.forEach(el => {
     primaryLinks.classList.toggle('active');
   })
 })
+$(document).ready(function () {
+  $(".search-button").click(function () {
+      $(".search-bar-wrap").toggle(500)
+  })
+})

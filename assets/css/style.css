@@ -299,6 +299,25 @@ img {
 .secondry-button.border-gray:hover {
    border: 4px solid #a59e99 !important;
 }
+.search-bar-wrap {
+  background-color: var(--gray-color);
+  padding: 2rem;
+  display: none;
+}
+.search-bar-wrap .search-field {
+  width: 100%;
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  padding: 0 1rem;
+  
+}
+.search-bar-wrap .search-field::placeholder {
+  color: var(--default-color);
+} 
 /* responsive */
 .close-menu i,
 .open-menu i {
