@@ -290,10 +290,14 @@ img {
 }
 .secondry-button:hover {
   border: 4px solid var(--theme-color) !important;
-
+}
+.primary-button,
+.secondry-button.border-gray,
+.secondry-button {
+  transition: all ease .3s;
 }
 .secondry-button.border-gray:hover {
-   border: 4px solid #a59e99;
+   border: 4px solid #a59e99 !important;
 }
 /* responsive */
 .close-menu i,
