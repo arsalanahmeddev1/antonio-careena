@@ -228,7 +228,7 @@ img {
 .right-card {
     background-color: #f5f5f5;
     margin-top: 4rem;
-
+    margin-left: -4rem;
 }
 .f-16 {
     font-size: var(--text-16);
