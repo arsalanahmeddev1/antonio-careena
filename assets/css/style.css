@@ -315,6 +315,10 @@ img {
   padding: 0 1rem;
   
 }
+.search-button i {
+  cursor: pointer;
+
+}
 .search-bar-wrap .search-field::placeholder {
   color: var(--default-color);
 } 
