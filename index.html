@@ -12,6 +12,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -20,12 +25,12 @@
     <header class="header">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md-6">
+                <div class="col-md-6 col-5">
                     <div class="logo">
                         <img src="./assets/images/logo.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-1">
                     <ul class="primary-links d-flex justify-content-between ">
                         <li class="position-relative"><a class="theme-color f-21 f-500" href="javascript:;">Home</a>
                         </li>
@@ -37,9 +42,12 @@
                         </li>
                         <li class="position-relative"><a class="theme-color f-21 f-500" href="javascript:;">Contact</a>
                         </li>
+                        <div class="menu-toggle close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <ul class="header-icons d-flex align-items-center justify-content-end ">
                         <li class="position-relative">
                             <i class="fa-solid fa-bag-shopping"></i>
@@ -52,6 +60,9 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </li>
+                        <div class="menu-toggle open-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -61,13 +72,13 @@
         <div class="container-fluid">
             <div class="row justify-content-between ">
                 <div class="col-md-3">
-                    <div class="banner-top-left-img-wrap position-relative ">
-                        <img src="./assets/images/banner-left-img.png" class="banner-left-img" alt="">
+                    <div class="banner-top-left-img-wrap position-relative d-none d-md-block ">
+                        <img src="./assets/images/banner-left-img.png" class="banner-left-img d-none d-md-block  " alt="">
                         <img src="./assets/images/banner-left-bottom-img-of-top-img.png"
-                            class="banner-left-bottom-img-of-top-img position-absolute" alt="">
+                            class="banner-left-bottom-img-of-top-img position-absolute d-none d-md-block" alt="">
                     </div>
                     <div>
-                        <img src="./assets/images/banner-left-bottom-img.png" class="banner-left-bottom-img" alt="">
+                        <img src="./assets/images/banner-left-bottom-img.png" class="banner-left-bottom-img d-none d-md-block" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -76,10 +87,10 @@
                         GLAMOROUS <br>
                         TWIST
                     </h1>
-                    <h4 class="f-36 f-500 theme-color text-center">TO THE ADORNMENTS YOU WEAR</h4>
+                    <h4 class="f-36 f-500 theme-color text-center sm-pb-70">TO THE ADORNMENTS YOU WEAR</h4>
                 </div>
                 <div class="col-md-3">
-                    <img src="./assets/images/banner-right-img.png" class="banner-right-img" alt="">
+                    <img src="./assets/images/banner-right-img.png" class="banner-right-img d-none d-md-block " alt="">
                     <div class="position-relative">
                         <img src="./assets/images/banner-right-bottom-img.png" class="banner-right-bottom-img" alt="">
                         <img src="./assets/images/banner-right-bottom-img-of-top-img.png"
@@ -94,29 +105,31 @@
             <div class="row justify-content-center align-items-center text-center">
                 <div class="col-md-12">
                     <h2 class="theme-color f-92 f-500 text-center ">Fine <br> Collection</h2>
-                </div>
-                <div class="col-md-3">
-                    <div class="collection-wrap">
-                        <img src="./assets/images/fine-collection-img-1.png" alt="">
-                        <h5 class="theme-color f-500 f-36">Product Name</h5>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="collection-wrap">
-                        <img src="./assets/images/fine-collection-img-2.png" alt="">
-                        <h5 class="theme-color f-500 f-36">Product Name</h5>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="collection-wrap">
-                        <img src="./assets/images/fine-collection-img-3.png" alt="">
-                        <h5 class="theme-color f-500 f-36">Product Name</h5>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="collection-wrap">
-                        <img src="./assets/images/fine-collection-img-4.png" alt="">
-                        <h5 class="theme-color f-500 f-36">Product Name</h5>
+                    <div class="row mobile-slider">
+                        <div class="col-md-3">
+                            <div class="collection-wrap">
+                                <img src="./assets/images/fine-collection-img-1.png" alt="">
+                                <h5 class="theme-color f-500 f-36">Product Name</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="collection-wrap">
+                                <img src="./assets/images/fine-collection-img-2.png" alt="">
+                                <h5 class="theme-color f-500 f-36">Product Name</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="collection-wrap">
+                                <img src="./assets/images/fine-collection-img-3.png" alt="">
+                                <h5 class="theme-color f-500 f-36">Product Name</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="collection-wrap">
+                                <img src="./assets/images/fine-collection-img-4.png" alt="">
+                                <h5 class="theme-color f-500 f-36">Product Name</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,7 +174,7 @@
         </div>
     </section>
     <section class="cta-sec">
-        <div class="container m-container">
+        <div class="container m-container p-0">
             <div class="row justify-content-center g-0">
                 <div class="col-md-12">
                     <h4 class="f-92 theme-color f-500 pb-100 pt-100 text-center ">Get In Touch</h4>
@@ -173,25 +186,30 @@
                             United Arab Emirates.
                         </h5>
                         <div class="mb-30">
-                            <a href="javascript:;" class="text-white f-24 roboto f-400">+971 12 123 1234</a>
+                            <a href="javascript:;" class="text-white f-24 roboto f-400 contact-number">+971 12 123
+                                1234</a>
                         </div>
-                        <a href="javascript:;" class="secondry-button text-white f-27 f-500 mb-30 ">Contact Us</a>
+                        <div class="d-flex">
+                            <a href="javascript:;" class="secondry-button text-white f-27 f-500 mb-30 ">Contact Us</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-5 p-0">
-                    <img src="./assets/images/cta-center-img.png" alt="">
+                    <img src="./assets/images/cta-center-img.png" class="cta-center-img d-none d-md-block" alt="">
                 </div>
-                <div class="col-md-3 p-0">
+                <div class="col-md-3 p-0 mt-30">
                     <div class="cta-left-card right-card">
-                        <h5 class="theme-color f-500 mb-3">
+                        <h5 class="theme-color f-500 f-48 mb-3">
                             Let’s Talk!
                         </h5>
                         <p class="para roboto f-16 mb-30">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.
                         </p>
-                        <a href="javascript:;"
-                            class="secondry-button border-gray theme-color f-27 f-500  mb-30 ">Contact Us</a>
+                        <div class="d-flex">
+                            <a href="javascript:;"
+                                class="secondry-button border-gray theme-color f-27 f-500  mb-30 ">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,8 +219,8 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-md-6">
-                    <img src="./assets/images/logo.png" alt="">
-                    <ul class="primary-links secondry-links  d-flex justify-content-between ">
+                    <img src="./assets/images/logo.png" class="mb-30" alt="">
+                    <ul class=" secondry-links  d-flex justify-content-between ">
                         <li class="position-relative"><a class="theme-color f-21 f-500" href="javascript:;">Home</a>
                         </li>
                         <li class="position-relative"><a class="theme-color f-21 f-500" href="javascript:;">About</a>
@@ -214,17 +232,29 @@
                         <li class="position-relative"><a class="theme-color f-21 f-500" href="javascript:;">Contact</a>
                         </li>
                     </ul>
-                    <ul class="social-links">
+                    <ul class="d-flex justify-content-center social-links mt-30 mb-30">
                         <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href=""><i class="fa-solid fa-basketball"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
+        <div class="container-fluid p-0">
+            <div class="border-bottom-light mb-30"></div>
+            <h6 class="roboto f-400 f-22 gray-700 text-center mb-30">
+                AntonioCareena-All Rights Reserved
+            </h6>
+        </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
-
 </html>
