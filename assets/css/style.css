@@ -16,7 +16,6 @@
   --text-92: 9.2rem;
   --text-130: 13rem;
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 h1,
 h2,
@@ -47,7 +46,7 @@ body {
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: var(--playfaire);
-  
+  overflow-x: hidden;  
 }
 /* global */
 .f-130 {
@@ -437,4 +436,13 @@ img {
     .right-card {
       margin-left: 0;
     }
+    .f-90,
+    .f-92 {
+      font-size: 5rem;
+    }
+    .passion-sec-inner-pad {
+      padding: 1.6rem;
+  }
+  
+  
 }
